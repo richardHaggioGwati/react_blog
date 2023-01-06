@@ -15,6 +15,8 @@
     "@commitlint/config-conventional": "^17.2.0",
     "@portabletext/react": "^2.0.0",
     "@sanity/image-url": "^1.0.1",
+    "@sanity/ui": "^1.0.12",
+    "@sanity/vision": "^3.0.0",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
@@ -23,9 +25,12 @@
     "next": "13.0.4",
     "next-sanity": "^3.1.9",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "sanity": "^3.0.0",
+    "styled-components": "^5.2.0"
   },
   "devDependencies": {
+    "@sanity/eslint-config-studio": "^2.0.1",
     "@typescript-eslint/eslint-plugin": "^5.43.0",
     "autoprefixer": "^10.4.13",
     "eslint": "^8.2.0",
