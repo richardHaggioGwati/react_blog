@@ -1,8 +1,10 @@
 'use client';
 
 import NextStudioLoading from 'next-sanity/studio/loading';
-import config from '../../../sanity.config';
+import config from '../../../../sanity.config';
 
-export default function Loading() {
+const Loading = () => {
   return <NextStudioLoading config={config} />;
-}
+};
+
+export default Loading;
