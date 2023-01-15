@@ -12,7 +12,6 @@
     "plugin:import/typescript",
     "plugin:prettier/recommended"
   ],
-
   "overrides": [],
   "parserOptions": {
     "ecmaFeatures": {
@@ -22,7 +21,11 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "prettier"
+  ],
   "ignorePatterns": [
     "next.config.js",
     "commitlint.config.js",
@@ -36,13 +39,28 @@
     "react/jsx-props-no-spreading": "warn",
     "react/jsx-filename-extension": [
       1,
-      { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+      {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
     ],
     "react/function-component-definition": [
       1,
       {
         "namedComponents": "arrow-function",
         "unnamedComponents": "arrow-function"
+      }
+    ],
+    "react/prop-types": [
+      "off",
+      {
+        "ignore": null,
+        "customValidators": null,
+        "skipUndeclared": null
       }
     ]
   }
