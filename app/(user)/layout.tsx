@@ -1,5 +1,6 @@
 import '../../css/globals.css';
 import Header from '../../components/Header';
+import Banner from '../../components/Banner';
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -10,8 +11,9 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         <link rel="icon" href="/favicon.ico" />
       </head>
 
-      <body>
+      <body className="max-w-7xl mx-auto">
         <Header />
+        <Banner />
         {children}
       </body>
     </html>
