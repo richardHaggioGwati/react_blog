@@ -13,6 +13,8 @@ const query = groq`
 } | order(_createdAt desc)
 `;
 
+export const revalidate = 3600; // revalidate the static pages
+
 const Page = async () => {
   if (previewData()) {
     return (

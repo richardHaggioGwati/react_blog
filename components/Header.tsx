@@ -19,7 +19,7 @@ const Header: React.FC = () => {
       <div>
         <Link
           href="/"
-          className="px-5 py-3 text-sm md:text-base bg-gray-900 text-[#F7AB0A] flex items-center rounded-full text-center"
+          className="px-5 py-3 text-xs font-medium md:text-base bg-gray-900 text-[#f7ab0a] flex items-center rounded-full text-center"
         >
           Sign up for our news latter
         </Link>

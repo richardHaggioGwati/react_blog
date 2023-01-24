@@ -10,6 +10,7 @@ interface Author extends Base {
   bio: Block[];
   image: Image;
   name: string;
+  designation: string;
   slug: Slug;
 }
 

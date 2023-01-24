@@ -11,6 +11,28 @@ interface Props {
   };
 }
 
+export const revalidate = 3600; // revalidate the static pages
+
+/**
+ * ! This is a special function that validates the number of path's that need to be statically generated during production.
+ * @returns the number of paths that need to be generated
+ */
+export const generateStaticParams = async () => {
+  const query = groq`
+  *[_type=='post']
+  {
+      slug
+  }
+  `;
+
+  const slugs: Posts[] = await client.fetch(query);
+  const slugRoutes = slugs.map((slug) => slug.slug.current);
+
+  return slugRoutes.map((slug) => ({
+    slug,
+  }));
+};
+
 const page = async ({ params: { slug } }: Props) => {
   const query = groq`
     *[_type=='post' && slug.current == $slug][0]
