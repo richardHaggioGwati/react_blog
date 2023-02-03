@@ -9,7 +9,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       <head>
         <title>Devosphere</title>
         <meta name="description" content="daily blog" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/king.svg" />
       </head>
 
       <body>
