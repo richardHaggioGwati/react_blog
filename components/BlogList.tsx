@@ -9,7 +9,7 @@ interface Prop {
 const BlogList: React.FC<Prop> = ({ posts }) => {
   return (
     <div>
-      <hr className="border-[#f7ab0a] mb-10" />
+      <hr className="border-[#661fff] mb-5" />
 
       <div className="grid grid-cols-1 md:grid-cols-2 px-10 gap-10 gap-y-16 pb-24">
         {/* Posts */}
@@ -38,7 +38,7 @@ const BlogList: React.FC<Prop> = ({ posts }) => {
                     {post.categories.map((categories) => (
                       <div
                         key={categories._id}
-                        className="bg-[#F7AB0A] text-center text-black px-3 py-1 rounded-full text-sm font-semibold"
+                        className="bg-[#661fff] text-center text-black px-3 py-1 rounded-full text-sm font-semibold"
                       >
                         <p>{categories.title}</p>
                       </div>
@@ -51,12 +51,12 @@ const BlogList: React.FC<Prop> = ({ posts }) => {
               <div className="flex gap-5 mt-4">
                 <div className="flex justify-center flex-col">
                   <div>
-                    <p className="text-gray-800 text-xl font-bold hover:text-gray-600">
+                    <p className="text-gray-100 text-xl font-bold hover:text-[#661fff]">
                       {post.title}
                     </p>
                   </div>
                   <div className="flex-col justify-center px-4 mt-2">
-                    <span className="text-m leading-5 text-gray-500 line-clamp-5">
+                    <span className="text-m leading-5 text-gray-100 line-clamp-3">
                       {post.description}
                     </span>
                   </div>
@@ -69,10 +69,10 @@ const BlogList: React.FC<Prop> = ({ posts }) => {
                       className="rounded-full"
                     />
                     <div className="flex flex-col justify-center px-4">
-                      <p className="text-md font-bold text-gray-800 hover:text-gray-600">
+                      <p className="text-md font-bold text-gray-200 hover:text-gray-600">
                         {post.author.name}
                       </p>
-                      <span className="text-sm text-gray-500">
+                      <span className="text-sm text-gray-100">
                         {post.author.designation.toLocaleLowerCase()}
                       </span>
                     </div>
