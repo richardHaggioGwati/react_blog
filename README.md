@@ -26,9 +26,9 @@ My Next.js blog will hopefully have a growing community of readers and contribut
 
 ## Todo's
 
-- [] Grow community
-- [] Leave comments on posts
-- [] Sign up for newsletter
+- [ ] Grow community
+- [ ] Leave comments on posts
+- [ ] Sign up for newsletter
 
 ## Contributions
 
