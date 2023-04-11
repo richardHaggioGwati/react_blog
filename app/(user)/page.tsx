@@ -39,8 +39,10 @@ const Page = async () => {
   return (
     <>
       <Hero />
-      <BlogList posts={posts} />;
-      <Footer />
+      <div className="max-w-7xl mx-auto">
+        <BlogList posts={posts} />
+        <Footer />
+      </div>
     </>
   );
 };
