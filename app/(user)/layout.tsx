@@ -25,7 +25,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         <title>Crafters</title>
         <meta
           name="description"
-          content="This blog is a platform for sharing my thoughts and experiences with any and all things code related."
+          content="This blog is a platform for sharing our thoughts and experiences with any and all things code related."
         />
         <link rel="icon" href="/king.svg" />
         <meta property="og:title" content="Code Crafters" />
