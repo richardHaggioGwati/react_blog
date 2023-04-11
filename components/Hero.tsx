@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
           minWidth: 200.0,
           scale: 1.0,
           scaleMobile: 1.0,
-          backgroundColor: 0xb072f,
+          backgroundColor: 0x2b2b2b,
           color1: 0x6900ff,
           birdSize: 0.5,
           wingSpan: 40.0,
